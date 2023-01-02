@@ -1,6 +1,7 @@
 # 2023-01-02
 
 - [x] mvp
+- [ ] getStaticPaths
 - [ ] social images rendered with Vercel
 - [ ] Dropdown for scrabble, Wordle, and full english dictionary http://thewordsword.com/
 - [ ] add more SEO pages

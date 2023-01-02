@@ -7,15 +7,15 @@ import Meta from "components/Meta";
 
 import seo from "src/seo";
 
-export default function SeoPage() {
-  const router = useRouter();
-  const { slug } = router.query;
+export default function SeoPage({ title, regex }) {
+  // const router = useRouter();
+  // const { slug } = router.query;
 
-  const page = seo[slug];
-  if (!page) return 404;
+  // const page = seo[slug];
+  // const { title, regex } = page;
+  // if (!page) return 404;
 
-  const { title, regex } = page;
-  console.log({ title, regex });
+  // console.log({ title, regex });
 
   return (
     <Container>
@@ -41,4 +41,18 @@ export default function SeoPage() {
       </main>
     </Container>
   );
+}
+
+export async function getStaticPaths() {
+  return {
+    paths: Object.keys(seo).map((slug) => ({ params: { slug } })),
+    fallback: false,
+  };
+}
+
+export async function getStaticProps({ params }) {
+  const page = seo[params.slug];
+  return {
+    props: page,
+  };
 }
