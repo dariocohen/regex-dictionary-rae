@@ -10,6 +10,7 @@ export default function Home() {
       <Meta
         title="Regex Dictionary Word Search"
         description="Regular expression dictionary word search to find words containing certain letters by Christian Genco"
+        image="/api/og"
       />
       <main>
         <h1 className="mt-4 text-6xl font-bold">Regex Dictionary</h1>
