@@ -14,7 +14,7 @@ function Input({ className, value, setValue }) {
 
       <div className="relative mt-1 rounded-md shadow-sm text-3xl">
         <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-          <span className="text-gray-500">/</span>
+          <span className="text-gray-500 font-mono">/</span>
         </div>
         <input
           type="text"
@@ -26,7 +26,7 @@ function Input({ className, value, setValue }) {
           placeholder="^r[aeiou]g[aeiou]x$"
         />
         <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3">
-          <span className="text-gray-500">/</span>
+          <span className="text-gray-500 font-mono">/i</span>
         </div>
       </div>
     </div>
