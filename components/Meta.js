@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-export default function Meta({ title, description }) {
+export default function Meta({ title, description, image }) {
   return (
     <Head>
       <title>{title}</title>
@@ -27,6 +27,8 @@ export default function Meta({ title, description }) {
 
       <link rel="icon" href="/favicon.ico" />
       <meta name="description" content={description} />
+
+      {image && <meta property="og:image" content={image} />}
     </Head>
   );
 }

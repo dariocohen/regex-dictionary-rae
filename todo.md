@@ -1,8 +1,8 @@
 # 2023-01-02
 
 - [x] mvp
-- [ ] getStaticPaths
-- [ ] social images rendered with Vercel
+- [x] getStaticPaths
+- [x] social images rendered with Vercel
 - [ ] Dropdown for scrabble, Wordle, and full english dictionary http://thewordsword.com/
 - [ ] add more SEO pages
   - [ ] https://www.semrush.com/analytics/keywordmagic/?q=words%20ending%20in&db=us

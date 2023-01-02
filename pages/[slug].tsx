@@ -7,7 +7,7 @@ import Meta from "components/Meta";
 
 import seo from "src/seo";
 
-export default function SeoPage({ title, regex }) {
+export default function SeoPage({ title, regex, slug }) {
   // const router = useRouter();
   // const { slug } = router.query;
 
@@ -22,6 +22,7 @@ export default function SeoPage({ title, regex }) {
       <Meta
         title={title}
         description="Regular expression dictionary word search to find words containing certain letters by Christian Genco"
+        image={`/api/og?slug=${slug}`}
       />
       <main>
         <h1 className="mt-4 text-6xl font-bold">{title}</h1>
@@ -53,6 +54,6 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   const page = seo[params.slug];
   return {
-    props: page,
+    props: { ...page, slug: params.slug },
   };
 }
