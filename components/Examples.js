@@ -8,7 +8,7 @@ export default function Examples() {
 
       <ul className="list-disc columns-2">
         {Object.entries(seo).map(([slug, { title }]) => (
-          <li>
+          <li key={slug}>
             <Link href={`/${slug}`} className="hover:underline">
               {title}
             </Link>

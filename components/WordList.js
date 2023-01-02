@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import sowpods from "./sowpods";
 
 export default function WordList({ regex }) {
-  const [limit, setLimit] = useState(500);
+  const perPage = 250;
+  const [limit, setLimit] = useState(perPage);
 
   let matching = [];
   let matches = 0;
@@ -29,14 +30,14 @@ export default function WordList({ regex }) {
         ))}
       </div>
       {error && <pre>{JSON.stringify(error.message, null, 2)}</pre>}
-      {matches > 100 && (
+      {matches > limit && (
         <div className="mt-6">
           {limit.toLocaleString()} of {matches.toLocaleString()} matches{" "}
           <button
-            onClick={() => setLimit(limit + 500)}
+            onClick={() => setLimit(limit + perPage)}
             className="bg-blue-500 text-white rounded px-2 py-1 hover:bg-blue-600"
           >
-            show 500 more
+            show {perPage} more
           </button>
         </div>
       )}
