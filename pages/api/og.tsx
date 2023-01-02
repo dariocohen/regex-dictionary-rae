@@ -33,7 +33,6 @@ export default function handler(req: NextRequest) {
             background: "white",
             width: "80%",
             height: "80%",
-            display: "flex",
             textAlign: "center",
             alignItems: "center",
             justifyContent: "center",
