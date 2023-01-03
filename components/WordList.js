@@ -29,7 +29,7 @@ export default function WordList({ regex }) {
           </div>
         ))}
       </div>
-      {error && <pre>{JSON.stringify(error.message, null, 2)}</pre>}
+      {error && <span className="text-red-600 font-mono">{error.message}</span>}
       {matches > limit && (
         <div className="mt-6">
           {limit.toLocaleString()} of {matches.toLocaleString()} matches{" "}

@@ -29,7 +29,7 @@ const pages = {
   // },
   "words-with-double-consonants": {
     title: "Words With Double Consonants",
-    regex: "[^aeiou]{2}",
+    regex: "([^aeiou])\\1",
   },
   "5-letter-words": { title: "5 Letter Words", regex: "^.{5}$" },
   "7-letter-words": { title: "7 Letter Words", regex: "^.{7}$" },

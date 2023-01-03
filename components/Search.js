@@ -9,7 +9,7 @@ function Input({ className, value, setValue }) {
         htmlFor="regex"
         className="block text-2xl font-medium text-gray-700"
       >
-        Regex
+        RegEx
       </label>
 
       <div className="relative mt-1 rounded-md shadow-sm text-3xl">
@@ -50,6 +50,17 @@ export default function Search({ defaultRegex = "" }) {
           <WordList regex={regex} />
         </div>
       )}
+
+      <h3 className="text-2xl font-medium text-gray-700 mt-8">
+        RegEx tutorial
+      </h3>
+      <iframe
+        class="w-full aspect-video rounded-lg shadow-lg"
+        src="https://www.youtube.com/embed/7QI9CW06QJg"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen=""
+      ></iframe>
 
       <Examples />
     </div>

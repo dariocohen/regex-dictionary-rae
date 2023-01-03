@@ -41,7 +41,7 @@ export default function Metadata({
 
       <meta property="og:locale" content="en_US" />
       <meta property="og:type" content="website" />
-      <meta property="og:site_name" content="Regex Dictionary" />
+      <meta property="og:site_name" content="RegEx Dictionary" />
       {false && (
         <meta
           property="article:publisher"
@@ -57,7 +57,7 @@ export default function Metadata({
 
       {false && <meta name="twitter:site" value="@fileinbox" />}
       <meta content="@cgenco" name="twitter:creator" />
-      <meta name="twitter:domain" content="Regex Dictionary" />
+      <meta name="twitter:domain" content="RegEx Dictionary" />
 
       <link rel="icon" href="/favicon.ico" />
       <link rel="manifest" href="/site.webmanifest" />

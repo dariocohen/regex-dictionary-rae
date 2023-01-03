@@ -11,7 +11,7 @@ export default function handler(req: NextRequest) {
   const { searchParams } = new URL(req.url);
 
   const slug = searchParams.get("slug");
-  const title = seo[slug]?.title || "Regex Dictionary";
+  const title = seo[slug]?.title || "RegEx Dictionary";
   const regex = seo[slug]?.regex || "^$";
 
   return new ImageResponse(
@@ -32,7 +32,7 @@ export default function handler(req: NextRequest) {
             display: "flex",
             background: "white",
             width: "80%",
-            height: "80%",
+            height: "65%",
             textAlign: "center",
             alignItems: "center",
             justifyContent: "center",
