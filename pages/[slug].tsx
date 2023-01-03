@@ -22,7 +22,7 @@ export default function SeoPage({ title, regex, slug }) {
       <Meta
         title={title}
         description="Regular expression dictionary word search to find words containing certain letters by Christian Genco"
-        image={`/api/og?slug=${slug}`}
+        image={`/api/og.png?slug=${slug}`}
       />
       <main>
         <h1 className="mt-4 text-6xl font-bold">{title}</h1>
