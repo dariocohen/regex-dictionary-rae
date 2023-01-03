@@ -9,8 +9,8 @@ export default function Home() {
     <Container>
       <Meta
         title="Regex Dictionary Word Search"
-        description="Regular expression dictionary word search to find words containing certain letters by Christian Genco"
-        image="/api/og.png"
+        description="Regular expression dictionary word search for Wordle, Scrabble, or Crosswords to find words containing certain letters in different positions."
+        image="https://www.regexdictionary.com/api/og.png"
       />
       <main>
         <h1 className="mt-4 text-6xl font-bold">Regex Dictionary</h1>

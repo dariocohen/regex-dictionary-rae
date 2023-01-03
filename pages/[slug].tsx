@@ -21,8 +21,8 @@ export default function SeoPage({ title, regex, slug }) {
     <Container>
       <Meta
         title={title}
-        description="Regular expression dictionary word search to find words containing certain letters by Christian Genco"
-        image={`/api/og.png?slug=${slug}`}
+        description="List of matching dictionary words for Wordle, Scrabble, or Crosswords to find words containing certain letters in different positions using Regular Expressions."
+        image={`https://www.regexdictionary.com/api/og.png?slug=${slug}`}
       />
       <main>
         <h1 className="mt-4 text-6xl font-bold">{title}</h1>
