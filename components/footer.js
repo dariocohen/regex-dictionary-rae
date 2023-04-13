@@ -7,7 +7,6 @@ export default function Footer() {
       <a
         className="hover:underline text-blue-500"
         href="https://christian.gen.co"
-        target="_blank"
       >
         Christian Genco
       </a>
@@ -15,7 +14,6 @@ export default function Footer() {
       <a
         className="hover:underline text-blue-500"
         href="https://twitter.com/cgenco"
-        target="_blank"
       >
         @cgenco
       </a>
