@@ -80,6 +80,10 @@ const pages = {
     title: "Words With All Vowels In Order",
     regex: "a.*e.*i.*o.*u",
   },
+  "words-that-start-and-end-with-t": {
+    title: "Words that start and end with t",
+    regex: "^t.+t$",
+  },
 };
 
 // "a b c d e f g h i j k l m n o p q r s t u v w x y z".split(" ")

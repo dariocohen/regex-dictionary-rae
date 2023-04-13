@@ -2,6 +2,36 @@ import { useState, useEffect } from "react";
 import Examples from "components/Examples";
 import WordList from "components/WordList";
 
+function CopyButton({ url }) {
+  const [copied, setCopied] = useState(false);
+  useEffect(() => {
+    if (copied) {
+      const timeout = setTimeout(() => setCopied(false), 2000);
+      return () => clearTimeout(timeout);
+    }
+  }, [copied]);
+  return (
+    <button
+      className="mt-6 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      onClick={() => {
+        if (navigator?.share) {
+          navigator.share({
+            title: document.title,
+            text: "",
+            url,
+          });
+        } else {
+          // copy to clipboard
+          navigator.clipboard.writeText(url);
+        }
+        setCopied(true);
+      }}
+    >
+      {copied ? "Copied!" : navigator?.share ? "share" : "copy URL"}
+    </button>
+  );
+}
+
 function Input({ className, value, setValue }) {
   return (
     <div className={className}>
@@ -44,6 +74,15 @@ export default function Search({ defaultRegex = "" }) {
     <div>
       <Input className="mt-12" value={regex} setValue={setRegex} />
 
+      {/* button to share this URL on mobile */}
+      {regex && regex !== defaultRegex && (
+        <CopyButton
+          url={`https://regexdictionary.com/regex?r=${encodeURIComponent(
+            regex
+          )}`}
+        />
+      )}
+
       {regex && (
         <div className="mt-6">
           <h3 className="text-2xl font-medium text-gray-700 mt-4">Results</h3>
@@ -55,7 +94,7 @@ export default function Search({ defaultRegex = "" }) {
         RegEx tutorial
       </h3>
       <iframe
-        class="w-full aspect-video rounded-lg shadow-lg"
+        className="w-full aspect-video rounded-lg shadow-lg"
         src="https://www.youtube.com/embed/7QI9CW06QJg"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
