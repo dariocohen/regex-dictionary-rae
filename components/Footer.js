@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer className="">
-      Made by{" "}
+      Original English Version Made by{" "}
       <a
         className="hover:underline text-blue-500"
         href="https://christian.gen.co"

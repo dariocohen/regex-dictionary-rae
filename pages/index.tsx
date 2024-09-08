@@ -14,7 +14,7 @@ export default function Home() {
         image="https://www.regexdictionary.com/api/og.png"
       />
       <main>
-        <h1 className="mt-4 text-6xl font-bold">RegEx Dictionary</h1>
+        <h1 className="mt-4 text-6xl font-bold">RegEx RAE Spanish Dictionary</h1>
 
         <Search />
       </main>
