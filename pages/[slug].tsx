@@ -21,7 +21,7 @@ export default function SeoPage({ title, regex, slug }) {
     <Container>
       <Meta
         title={title}
-        description="List of matching dictionary words for Wordle, Scrabble, or Crosswords to find words containing certain letters in different positions using Regular Expressions."
+        description="List of matching dictionary words for Wordle, Scrabble, or Crosswords to find words containing certain letters in different positions using Regular Expressions in spanish."
         image={`https://www.regexdictionary.com/api/og.png?slug=${slug}`}
       />
       <main>
@@ -35,7 +35,7 @@ export default function SeoPage({ title, regex, slug }) {
             className="hover:underline text-blue-500"
             href="https://christian.gen.co"
           >
-            Christian Genco
+            Original English version by Christian Genco
           </a>
         </h2>
         <Search defaultRegex={regex} />
