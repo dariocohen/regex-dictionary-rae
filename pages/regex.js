@@ -15,7 +15,7 @@ export default function Home() {
       <Meta
         title="RegEx Dictionary Word Search"
         description="Regular expression dictionary word search for Wordle, Scrabble, or Crosswords to find words containing certain letters in different positions."
-        image="https://www.regexdictionary.com/api/og.png"
+        image="https://regex-dictionary-rae.vercel.ap/api/og.png"
       />
       <main>
         <h1 className="mt-4 text-6xl font-bold">RegEx Dictionary</h1>

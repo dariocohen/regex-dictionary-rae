@@ -77,7 +77,7 @@ export default function Search({ defaultRegex = "" }) {
       {/* button to share this URL on mobile */}
       {regex && regex !== defaultRegex && (
         <CopyButton
-          url={`https://regexdictionary.com/regex?r=${encodeURIComponent(
+          url={`https://regex-dictionary-rae.vercel.app/regex?r=${encodeURIComponent(
             regex
           )}`}
         />

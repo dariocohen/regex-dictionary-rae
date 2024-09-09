@@ -6,7 +6,7 @@ function generateSiteMap() {
      ${Object.entries(seo)
        .map(([slug, { title }]) => {
          return `
-       <url><loc>https://regexdictionary.com/${slug}</loc></url>
+       <url><loc>https://regex-dictionary-rae.vercel.app/${slug}</loc></url>
      `;
        })
        .join("")}

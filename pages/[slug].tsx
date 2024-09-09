@@ -22,13 +22,12 @@ export default function SeoPage({ title, regex, slug }) {
       <Meta
         title={title}
         description="List of matching dictionary words for Wordle, Scrabble, or Crosswords to find words containing certain letters in different positions using Regular Expressions in spanish."
-        image={`https://www.regexdictionary.com/api/og.png?slug=${slug}`}
       />
       <main>
         <h1 className="mt-4 text-6xl font-bold">{title}</h1>
         <h2 className="text-2xl">
           <Link href="/" className="hover:underline text-blue-500">
-            regexdictionary.com
+            https://regex-dictionary-rae.vercel.app/
           </Link>{" "}
           by{" "}
           <a

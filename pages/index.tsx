@@ -11,7 +11,7 @@ export default function Home() {
       <Meta
         title="RegEx RAE Spanish Dictionary Word Search"
         description="Regular expression dictionary word search for Wordle, Scrabble, or Crosswords to find words containing certain letters in different positions."
-        image="https://www.regexdictionary.com/api/og.png"
+        image="https://regex-dictionary-rae.vercel.app/api/og.png"
       />
       <main>
         <h1 className="mt-4 text-6xl font-bold">RegEx RAE Spanish Dictionary</h1>
